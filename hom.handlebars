@@ -1,0 +1,46 @@
+<h1>Wellcome:</h1>
+<b>Subjective <br></b>
+{{name}} is a  {{age}} years old {{session.gender}}  who presents for. {{adj}} has history of previous anesthesia complications of
+{{ session.anesthesia-reaction}}.</br></br>
+
+{{adj}}  previously had a colonoscopy for  {{session.colonoscopy-reason}}</br></br>
+
+The colonoscopy was done {{session.colonoscopy-years}} years ago by  {{session.colonoscopy-physician}}. The findings were  {{session.colonoscopy-findings}}.
+</br></br>
+<b>ROS:</b></br>
+Constipation or tendency towards constipation.</br></br>
+
+<b>Allergies:</b></br>
+{{#each allergies}}
+  {{this}}</br>
+{{/each}}
+</br></br>
+<b>Medications:</b></br>
+{{#each medicns}}
+  {{this}}</br>
+{{/each}}
+
+
+<b>PMH:</b></br>
+   {{session.medical-history-chronic-illnesses}}
+</br></br>
+<b>PSH:</b></br>
+ {{session.medical-history-surgeries}}
+</br>
+FH:</br>
+dad had colon cancer or uterine cancer at 31 yrs old.</br>
+</br>
+SH:</br>
+Smokes or has smoked. Drinks 2 or more on occasions. </br>
+Uses: Heroine, Cocaine, Marijuana</br>
+
+Objective:</br>
+General: Well-appearing, no acute distress. AAOx3.</br>
+HEENT: Oropharynx normal, TMs normal. No lymphadenopathy. </br>
+Pulmonary: Clear to auscultation bilaterally, normal respiratory effort.</br>
+Cardiovascular: Regular rate and rhythm, no murmurs. No LE edema.</br>
+Abdomen: Soft, non-distended, non-tender to palpation. </br>
+
+Assessment / Plan:</br>
+1. Preventative:</br>
+- Colonoscopy: 23 years ago not normal.</br>
