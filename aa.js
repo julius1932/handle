@@ -2,7 +2,7 @@ var data = module.exports={
   "_id": "H1t0SO2RG",
   "age": 3,
   "uid": "H1t0SO2RG",
-  "long": "<b>Subjective:</b><br/>Rau is a 3 years old <br/><br/><b>Medications</b>: <br/>- coumadin 3 MG 2/day <br/><br/><b>Social History:</b><br/>Does not drink. <br/><br/><b>Objective:</b><br/>General: Well-appearing, no acute distress. AAOx3.<br/>HEENT: Oropharynx normal, TMs normal. No lymphadenopathy. <br/>Pulmonary: Clear to auscultation bilaterally, normal respiratory effort.<br/>Cardiovascular: Regular rate and rhythm, no murmurs. No LE edema.<br/>Abdomen: Soft, non-distended, non-tender to palpation. <br/><br/><b>Assessment / Plan:</b><br/>1. Preventative:<br/>- Colonoscopy: 53 years ago not normal.",
+  "long": "<b>Subjective:</b><br/>Rau is a 3 years old <br/><br/><b>Medications</b>: <br/>- coumadin 3 MG 2/day <br/><br/><b>Feeling tired,:</b><br/>Does not drink. <br/><br/><b>Objective:</b><br/>General: Well-appearing, no acute distress. AAOx3.<br/>HEENT: Oropharynx normal, TMs normal. No lymphadenopathy. <br/>Pulmonary: Clear to auscultation bilaterally, normal respiratory effort.<br/>Cardiovascular: Regular rate and rhythm, no murmurs. No LE edema.<br/>Abdomen: Soft, non-distended, non-tender to palpation. <br/><br/><b>Assessment / Plan:</b><br/>1. Preventative:<br/>- Colonoscopy: 53 years ago not normal.",
   "name": "Rau",
   "type": "",
   "short": "",
@@ -100,9 +100,6 @@ if(data.session.gender==='female'){
     data.adj='He';
 }
 var arr =[];
-/*for(var i =0 ; i<data.session['drug-allergies-meds'].length;i++){
-   arr.push(data.session['drug-allergies-meds'][i]+": "+data.session['drug-allergies-details'][i]);
-}*/
 data.allergies=arr;
 var meds =data.session.medication.meds;
   var keys =Object.keys( meds);
