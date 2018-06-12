@@ -550,3 +550,11 @@ for(var i =0 ; i<dat2.session['drug-allergies-meds'].length;i++){
    arr.push(dat2.session['drug-allergies-meds'][i]+": "+dat2.session['drug-allergies-details'][i]);
 }
 dat2.allergies=arr;
+var meds =dat2.session.medication.meds;
+  var keys =Object.keys( meds);
+  var arr2=[];
+   keys.forEach(function(key) {
+      arr2.push(meds[key].medication +' '+meds[key].dosage+''+meds[key].timesPerDay+'/ day');
+   });
+
+ dat2.medicns=arr2;

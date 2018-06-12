@@ -92,3 +92,22 @@ var data = module.exports={
   "_updated_by": "HyhWxHRTM",
   "medications": []
 }
+
+data.session.gender =data.session.gender.toLowerCase()
+if(data.session.gender==='female'){
+  data.adj='She';
+}else{
+    data.adj='He';
+}
+var arr =[];
+/*for(var i =0 ; i<data.session['drug-allergies-meds'].length;i++){
+   arr.push(data.session['drug-allergies-meds'][i]+": "+data.session['drug-allergies-details'][i]);
+}*/
+data.allergies=arr;
+var meds =data.session.medication.meds;
+  var keys =Object.keys( meds);
+  var arr2=[];
+   keys.forEach(function(key) {
+      arr2.push(meds[key].medication +' '+meds[key].dosage+''+meds[key].timesPerDay+'/ day');
+   });
+ data.medicns=arr2;

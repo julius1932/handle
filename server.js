@@ -12,18 +12,10 @@ app.set('view engine','handlebars');
 app.set('port',(process.env.PORT||3000));
 
 app.get('/',function(req,res){
-  res.render('home',data);
+  res.render('hom',data);
 });
 
 app.get('/hom',function(req,res){
-/*  var meds =dat2.session.medication.meds;
-  var keys =Object.keys( meds);
-  console.log(keys.length);
-  var arr2=[];
-  for(var key in keys){
-    arr2.push(meds[key].medication);
-  }
-  dat2.medicns=arr2;*/
   res.render('hom',dat2);
 });
 app.listen(app.get('port'),function(){
